@@ -1,10 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const NavigationWrapper = styled.nav`
   display: flex;
   justify-content: center;
+  margin: 6px;
 `;
 
 const NavigationList = styled.ul`
