@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import CatList from "../CatList";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       </header>
       <main>
         <h3>Here is some lovely Cat's that are in need of a home</h3>
+        <CatList></CatList>
       </main>
       <footer>&copy; 2023 Fluffy tails</footer>
     </div>

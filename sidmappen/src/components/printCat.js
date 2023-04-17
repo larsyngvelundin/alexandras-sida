@@ -3,7 +3,7 @@ const printCat = (cat) => {
     return (
         <li>
             <img src={cat.imageLink} />
-            <p>{cat.name}</p>
+            <h1>{cat.name}</h1>
         </li>
     )
 }
