@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CreateCat from './CreateCat';
+import PrintCat from './PrintCat';
 
 
 function CatList() {
@@ -16,7 +17,7 @@ function CatList() {
                 let newCat = await getNewCat()
                 let tempCats = cats
 
-                console.log(newCat)
+                //console.log(newCat) 
                 tempCats.push(newCat);
                 setCats([...tempCats])
             }
@@ -29,10 +30,8 @@ function CatList() {
         <ul>
             {cats.map((cat, index) => (
                 <li key={index}>
-                    <img src={cat.imageLink}></img>
-                    <p>{cat.name}</p>
+                <PrintCat cat={cat} />
                 </li>
-
             ))}
         </ul>
     );
