@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <header>
-        <div className="headContent">
+        <div className="headContainer">
           <h2>Fluffy Tails</h2>
           <NavigationMenu />
         </div>
